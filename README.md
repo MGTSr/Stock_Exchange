@@ -1,1 +1,1 @@
-Stock exchange application written in Java which trades orders as well as quotes, Swing GUI.
+Stock exchange application which trades orders as well as quotes.  This app is written in Java and uses Swing GUI.
