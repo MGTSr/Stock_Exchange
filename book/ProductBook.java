@@ -256,11 +256,11 @@ public class ProductBook {
 	 * @throws OrderNotFoundException
 	 ***********************************************/
 	 public synchronized void cancelOrder(String side, String orderId) throws InvalidMessageException, InvalidVolumeException, InvalidPriceException, OrderNotFoundException  {
-		 if(side == "BUY"){
+		 if(side.equals("BUY")){
 			 buy.submitOrderCancel(orderId);
 			 buy.removeTradable(orderId);
 		 }
-		 if(side == "SELL"){
+		 if(side.equals("SELL")){
 			 sell.submitOrderCancel(orderId);
 			 sell.removeTradable(orderId);
 		 }
