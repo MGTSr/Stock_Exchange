@@ -30,7 +30,7 @@ public class TradableUserData {
 		return product;
 	}
 	
-	
+	//use .isEmpty() here/////////////
 	private void setUserName(String userName) throws DataValidationException {
 		if(userName == ""  || userName == null  ) throw new DataValidationException("Username cannot be empty or null");
 		this.userName = userName;
